@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.main`
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -35,7 +35,7 @@ const Title = styled.h1`
   padding: 2.5rem;
 `;
 
-const Header = () => {
+const Header = ({ data }) => {
   return (
     <Container>
       <Title>Nigeria Covid Data</Title>
@@ -43,23 +43,23 @@ const Header = () => {
         <TopHeaderContainer>
           <HeaderInfo>
             <SubTitile>Sample Tested</SubTitile>
-            <CovidData>8990099878</CovidData>
+            <CovidData>{data.data.totalSamplesTested}</CovidData>
           </HeaderInfo>
           <HeaderInfo>
             <SubTitile>Confirmed Cases</SubTitile>
-            <CovidData>288990</CovidData>
+            <CovidData>{data.data.totalConfirmedCases}</CovidData>
           </HeaderInfo>
           <HeaderInfo>
             <SubTitile>Active Cases</SubTitile>
-            <CovidData>8990099878</CovidData>
+            <CovidData>{data.data.totalActiveCases}</CovidData>
           </HeaderInfo>
           <HeaderInfo>
             <SubTitile>Discharged</SubTitile>
-            <CovidData>29u980</CovidData>
+            <CovidData>{data.data.discharged}</CovidData>
           </HeaderInfo>
           <HeaderInfo>
             <SubTitile>Death</SubTitile>
-            <CovidData>399000</CovidData>
+            <CovidData>{data.data.death}</CovidData>
           </HeaderInfo>
         </TopHeaderContainer>
       </HeaderContainer>
