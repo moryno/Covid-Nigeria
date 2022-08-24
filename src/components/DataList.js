@@ -20,7 +20,7 @@ const DataList = ({ data }) => {
     <Container>
       <Title> State Results </Title>
       <Wrapper>
-        {data.data.states.map((item) => {
+        {data?.data?.states?.map((item) => {
           return <Data key={data._id} item={item} />;
         })}
       </Wrapper>

@@ -43,23 +43,23 @@ const Header = ({ data }) => {
         <TopHeaderContainer>
           <HeaderInfo>
             <SubTitile>Sample Tested</SubTitile>
-            <CovidData>{data.data.totalSamplesTested}</CovidData>
+            <CovidData>{data?.data?.totalSamplesTested}</CovidData>
           </HeaderInfo>
           <HeaderInfo>
             <SubTitile>Confirmed Cases</SubTitile>
-            <CovidData>{data.data.totalConfirmedCases}</CovidData>
+            <CovidData>{data?.data?.totalConfirmedCases}</CovidData>
           </HeaderInfo>
           <HeaderInfo>
             <SubTitile>Active Cases</SubTitile>
-            <CovidData>{data.data.totalActiveCases}</CovidData>
+            <CovidData>{data?.data?.totalActiveCases}</CovidData>
           </HeaderInfo>
           <HeaderInfo>
             <SubTitile>Discharged</SubTitile>
-            <CovidData>{data.data.discharged}</CovidData>
+            <CovidData>{data?.data?.discharged}</CovidData>
           </HeaderInfo>
           <HeaderInfo>
             <SubTitile>Death</SubTitile>
-            <CovidData>{data.data.death}</CovidData>
+            <CovidData>{data?.data?.death}</CovidData>
           </HeaderInfo>
         </TopHeaderContainer>
       </HeaderContainer>
